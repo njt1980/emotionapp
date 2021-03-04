@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>TalkToMe</title>
+    </head>
+    <body>
+        <h1>Talk to me !!</h1>
+        <form action={{ url_for('login') }} method="POST">
+            <div>{{ msg }}</div> 
+            <input id="username" name="username" type="text" placeholder="Enter your username" class="textbox"/></br>
+            <input id="password" name="password" type="password" placeholder="Enter your password" class="password"/></br> 
+            <input type="submit" class="btn" value="Sign In">
+        </form>
+    </body>
+</html>

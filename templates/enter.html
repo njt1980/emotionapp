@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>How you feeling??</title>
+        <body>
+            <div>Its {{ date_time }}</div></br></br>
+            <div>How you feeling??</div></br>
+            <form action={{ url_for('enteremotion') }} method="POST">
+                <input type="radio" name="emotion" id="emotion" value="sad"> Sad </input>
+                <input type="radio" name="emotion" id="emotion" value="happy"> Happy </input>
+                <input type="radio" name="emotion" id="emotion" value="Irritated"> Irritated </input>
+                <input type="radio" name="emotion" id="emotion" value="Frustrated"> Frustrated </input>
+                <input type="radio" name="emotion" id="emotion" value="dontknow"> dontknow </input></br></br>
+                <!-- <input id='emotion' name='emotion' type='text' placeholder="How you feeling?"/> </br></br> -->
+                <input id='why' name='why' type='text' placeholder="why?" /></br></br>
+                <input type="submit" value="Save">
+            </form>
+            <a href="{{ url_for('logout')}}">Logout</a>
+        </body>
+    </head>
+</html>

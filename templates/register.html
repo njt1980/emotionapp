@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <Title>Register - New User</Title>
+    </head>
+    <body>
+        <form action="{{ url_for('register') }}" method='POST'>
+            <div>{{ msg }}</div>
+            <input id='username' name='username' type='text' placeholder="Enter your username" class='textbox' /></br>
+            <input id='password' name='password' type='password' placeholder="Enter your password" class='textbox' /></br>
+            <input id='email' name='email' type='text' placeholder="Enter your email" class='textbox' /></br>
+            <input type='submit' class='btn' value='Sign up' /></br>
+        </form>
+    </body>
+</html>
